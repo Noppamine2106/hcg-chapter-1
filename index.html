@@ -15,7 +15,7 @@
 
             function startGame(){
                 myGameArea.start();
-                myGamePiece = new component(30,30,"#FF0000",10,120);
+                myGamePiece = new component(30,30,"red",10,120);
             }
             var myGameArea = {
                 canvas : document.createElement("canvas"),
@@ -40,8 +40,8 @@
                 this.y = y;
                 this.update = function(){
                     ctx = myGameArea.context;
-                    ctx.fillStyle = color;
-                    ctx.filRect(this.x,this.y,this.width,this.height);
+                    ctx.fillstyle = color;
+                    ctx.fillRect(this.x,this.y,this.width,this.height);
                 }
                 this.newPos = function(){
                     this.x += this.speedX;
