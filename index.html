@@ -39,9 +39,9 @@
                 this.x = x;
                 this.y = y;
                 this.update = function(){
-                    ctx = myGameArea.context;
-                    ctx.fillstyle = color;
-                    ctx.fillRect(this.x,this.y,this.width,this.height);
+                    myGameArea.context.fillstyle = color;
+                    myGameArea.context.fillRect(this.x,this.y,this.width,this.height);
+                    
                 }
                 this.newPos = function(){
                     this.x += this.speedX;
